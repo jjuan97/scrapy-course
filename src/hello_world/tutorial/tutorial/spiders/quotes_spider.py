@@ -6,8 +6,8 @@ class QuotesSpider(scrapy.Spider):
 
     def parse(self, response): 
         '''Este metodo es el que define la logica a partir de la cual nosotros extraemos información.
-        self: hace referencia a la instancia posterior de una clase.
-        response: hace referencia a la respuesta http'''
+        -self: hace referencia a la instancia posterior de una clase.
+        -response: hace referencia a la respuesta http'''
         
         with open('resultados.html', 'w', encoding='utf-8') as f:
             f.write(response.text)
