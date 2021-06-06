@@ -3,7 +3,8 @@ let = $accordion = document.getElementById("accordion");
 let ciaData = null;
 
 fetch(
-  './cia.json'
+  //'./cia.json'
+  'https://app.zyte.com/api/v2/datasets/Oif9Q33jDNR/download?format=json'//datos recolectados desde la nube
 )
   .then((response) => {
     return response.json();
